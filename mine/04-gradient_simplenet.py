@@ -25,7 +25,23 @@ t = np.array([0, 0, 1])
 
 net = simpleNet()
 
+print "parameter"
+print (net.W)
+print "\n"
+
+p = net.predict(x)
+print "prediction value"
+print p
+print "\n"
+print "Maximum value index"
+print np.argmax(p)
+print "\n"
+
 f = lambda w: net.loss(x, t)
 dW = numerical_gradient(f, net.W)
 
+print "net loss"
+print net.loss(x,t)
+print "\n"
+print "numerical gradient"
 print dW

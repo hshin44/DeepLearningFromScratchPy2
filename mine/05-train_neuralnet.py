@@ -4,7 +4,7 @@ sys.path.append(os.pardir)
 
 import numpy as np
 from dataset.mnistPy2 import load_mnist
-from two_layer_net import TwoLayerNet
+from two_layer_net05  import TwoLayerNet
 
 # 데이터 읽기
 (x_train, t_train), (x_test, t_test) = load_mnist(normalize=True, one_hot_label=True)
